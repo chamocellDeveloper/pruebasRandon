@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style>
+        img {
+            width: 100px;
+        }
+        #caja {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        #contenedor {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--https://ipload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png -->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="imagen">
+
+    <a href="thhp://google.com">Ir a Google</a>
+
+    <p>Este es un texto</p>
+
+    <div id="caja" draggable="true"></div>
+
+    <div id="contenedor">
+        <h1>Contenedor</h1>
+    </div>
+
+    <script>
+        const caja = document.querySelector('#caja')
+
+        /*caja.addEventListener('dragstart', e => {
+            console.log('Drag Start');
+        })
+
+        caja.addEventListener('dragend', e => {
+            console.log('Drag end');
+        })
+
+        caja.addEventListener('drag', e => {
+            console.log('Drag');
+        })*/
+
+        const contenedor = document.querySelector('#contenedor')
+
+        contenedor.addEventListener('dragenter', e => {
+            console.log('Drag Enter')
+        })
+
+        contenedor.addEventListener('dragleave', e => {
+            
+            console.log('Drag Leave')
+        })
+
+        contenedor.addEventListener('dragover', e => {
+            e.preventDefault()
+            console.log('Drag Over')
+        })
+
+        contenedor.addEventListener('drop', e => {
+            console.log('Drop')
+            contenedor.appendChild(caja)
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matematicas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css">
+</head>
+<body>
+<div class="container" style="padding-top: 60px;">
+    <div class="row">
+        <div class="col-md-8 offset-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">                    
+                  <h5 class="card-title text-center">formulario de Cripto</h5>
+
+                  <form action="" id="form1">
+                        <p id="mensaje1"></p>
+                      <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Cantidad</span>
+                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                      
+                      <p id="mensaje2"></p>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+                      </div>
+                      
+                      <p id="mensaje3"></p>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Tipo de operacion</option>
+                        <option value="compra">Compra</option>
+                        <option value="venta">Venta</option>
+                      </select>
+                      <a href="#" class="btn btn-primary mt-5"  id="botonForm">Go somewhere</a>
+
+                  </form>
+                  <div class="mt-3" id="venta"></div>
+                  <div class="mt-3" id="comision"></div>
+                  <div class="mt-3" id="total"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <script>
+        const form1 = document.getElementById('form1')
+        const botonForm = document.getElementById('botonForm')
+        const venta = document.getElementById('venta')
+        const comision = document.getElementById('comision')
+        const mensaje2 = document.getElementById('mensaje2')
+        const mensaje1 = document.getElementById('mensaje1')
+        
+      contador = 0 
+
+       const reset = () => {
+            if(contador ==0){
+              form1[0].value = ''
+              form1[1].value = ''
+              form1[2].value = 'Tipo de operacion'     
+            }
+        }
+        reset()
+
+        const valida = (p4) => {
+          form1[0].addEventListener('keyup', (e) => {
+            const union = e.target.form[0].textLength
+            if(union > 0){
+              botonForm.hidden =false
+            }
+          })
+        }
+        valida()
+
+        const accion = (p4) => {
+          if(p4.textContent.length > 0){
+            contador = 1
+            botonForm.hidden = true
+          }
+        }
+        
+
+        
+        
+        botonForm.addEventListener('click', (e) => {
+            e.preventDefault()
+            const formDatos = form1
+            
+            const data  = form1[0].value
+            const data1 = form1[1].value
+            const data2 = form1[2].value
+            
+            
+                let operacion1 = (data*data1).toFixed(2)
+                let operacion2 = (operacion1*0.0050).toFixed(2)
+                let operacionTodo = (operacion1 -operacion2).toFixed(2) 
+               
+            
+            
+
+            if(data == ''){
+               const p4 = document.createElement('p')
+               p4.textContent = 'Este campo es requerido'
+               mensaje1.appendChild(p4)
+               accion(p4)
+               valida(p4)
+               return
+            }
+
+            if(data1 == ''){
+               const p5 = document.createElement('p')
+               p5.textContent = 'Este campo es requerido'
+               mensaje2.appendChild(p5) 
+               return
+            }
+            console.log(data2)
+           if(data2 === 'venta'){
+
+               const p1 = document.createElement('p')
+               p1.textContent = `Cantidad Recivida: ${operacion1}`
+               venta.appendChild(p1)
+   
+               const p2 = document.createElement('p')
+               p2.textContent = `Comisión Operacion: ${operacion2}`
+               comision.appendChild(p2)
+
+               const p3 = document.createElement('p')
+               p3.textContent = `Importe recivido: ${operacionTodo}`
+               comision.appendChild(p3)
+               reset()
+               contador = 1               
+           }   
+           boton()
+           
+        })   
+
+        
+    </script>
+</body>
+</html>

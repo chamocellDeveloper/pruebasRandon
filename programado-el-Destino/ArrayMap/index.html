@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+<body>
+    
+    <script>
+        
+        const numeros = [10, 20, 40, 50]
+        const objetos = [
+            { nombre: 'A', apellido: 'B'},
+            { nombre: 'C', apellido: 'D'},
+            { nombre: 'B', apellido: 'F'},
+        ]
+
+        const resultado = numeros.map(item => item * 2)
+        console.log(numeros)
+        console.log(resultado)
+
+        const resultadoNyA = objetos.map(item => {
+            return {
+                ...item,
+                nombreApellido: ` ${item.nombre} ${item.apellido}`
+            }
+        })
+
+        console.log(objetos)
+        console.log(resultadoNyA)
+    </script>
+</body>
+</html>

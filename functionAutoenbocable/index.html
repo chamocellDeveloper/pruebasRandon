@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion Auto Inbocable</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css">
+</head>
+<body>
+     <span id="loading">Loading</span>
+
+    <div class="container mt-5" hidden id="contenedor">
+        <div class="row">
+            <div class="col-md-8 offset-4">
+                <h2 class="text-cente">
+                    Bienvenido
+                </h2>
+            </div>
+        </div>
+    </div>
+
+     <script>
+         ;(function () {
+            let loadingText = document.getElementById('loading')
+            let contenedor = document.getElementById('contenedor')
+
+            let tiemer = setTimeout(() => {
+                console.log('Exicution setTimeout')
+                contenedor.hidden = false
+                loadingText.innerHTML = ' '
+            },5000)
+            if(loadingText.innerHTML === 'Completed'){
+                clearTimeout(tiemer)
+            }
+         })()
+
+     </script>
+</body>
+</html>

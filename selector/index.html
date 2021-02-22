@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3226d1ef96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="padding-top:50px;">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">
+                            Precio de criptoMonedas
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <select name="" id="cripto"  data-deault-value="neutro">
+                            <option value="neutro" SELECTED >selecciona la moneda</option>
+                            <option value="BTC">Bitcoin</option>
+                            <option value="ETH">Ethereum</option>
+                            <option value="XRP">Ripple</option>
+                            <option value="LTC">LendConnert</option>
+                        </select>
+                        
+                        <div class="col-mb-4 mt-5">
+                            <span>Cotisacion en tiempo real</span>
+                        </div>
+                        <div class="col-mb-4 mt-5">
+                            <span id="valor"></span><br>
+                            <span id="USD"></span>
+                        </div>
+                        
+                            
+                        
+                        <div class="col-mb-4 mt-5">
+                            <h5> Ver el sigiente</h5>
+                            <input type="checkbox" id="cambio" onchange="desplasamiento()" /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>
+                            segunda tarjeta
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form id="form">
+                                        <h4 class="text-center">Control de compar y Ventas</h4>
+                                        <input type="number" id="cantidad" class="mt-5" placeholder="Cantidad">
+                                        <select name="compraventa" id="compraventa" class="mt-3">
+                                            <option data-default='default' >Seleccione una operacion</option>
+                                            <option data-venta='venta' >Venta</option>
+                                            <option data-compra='compra'>Compra</option>
+                                        </select>
+                                        <dir class="mt-3">
+                                            <h4 class="mt-2" id="comicion"></h4>
+                                            <h4 id="total" class="mt-2"></h4>
+                                        </dir>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>
+                            tercera tarjet
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        area de trabajo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <div id="contenedor" style="border: 1px solid black; padding: 20px;">
+        <button data-color="red">Click 1</button>
+        <button data-color="blue">Click 2</button>
+        <button data-color="green">Click 3</button>
+        <button data-color="yellow">Click 4</button>
+        <button data-color="pink">Click 5</button>
+        <button >Click 6</button>
+        <button data-color="black">Click 7</button>
+    </div>
+
+    <select name="selector" id="content">
+        <option value="">Bitcon</option>
+        <option value="">Ethereum</option>
+        <option value="">peso</option>
+        <option value="">dolar</option>
+        <option value="">venemexcoin</option>
+    </select>
+        <h2 id=""></h2>
+
+    <script>
+        const contenedor = document.querySelector('#contenedor')
+
+        contenedor.addEventListener('click', (e) => {
+            if(e.target.id !== 'contenedor')
+            {
+                e.target.style.backgroundColor= e.target.dataset.color || 'purple'
+                e.target.style.color="white"
+            }
+            
+
+        
+        })
+
+        const content = document.querySelector('#content')
+
+        
+        content.addEventListener('click', (e) => {
+            if(e.target.id !== 'content')
+            {
+                alert(e.target.textContent)
+            }
+        })
+    </script>
+</body>
+</html>

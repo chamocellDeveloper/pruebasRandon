@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Ternario</title>
+</head>
+<body>
+    
+    <button id="boton"></button>
+
+    <script>
+
+    boton = document.querySelector('#boton')
+
+        const valor = true
+        let mostrarValor
+
+        mostrarValor = valor 
+        ? boton.innerHTML = 'Verdadero' 
+        : boton.innerHTML = 'falso'
+        console.log(mostrarValor)
+
+        const saludar = nombre => {
+            const n = nombre || 'Invitado'
+            //const n = nombre ? nombre : 'invitado'
+            alert(`Bienvenido ${n}`)
+        }
+
+        saludar()
+
+        const dividir = (a,b) => {
+            
+            const s = a/b
+
+            /*if (isNaN(s)) {
+                return 0
+            }else {
+                return s
+            }*/
+
+            return isNaN(s) ? 0 : s
+
+            
+        }
+
+        retorno = dividir(3,2)
+
+        console.log(retorno)
+
+        
+
+        
+
+    </script>
+</body>
+</html>

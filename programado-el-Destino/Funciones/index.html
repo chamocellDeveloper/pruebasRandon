@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+ 
+    
+    <script>
+        
+       /* function pedirDato (datoAIngresar, label) {
+        const dato = prompt(`Ingrese su ${datoAIngresar}`) 
+        const p = document.createElement('p')
+        p.innerHTML = `<strom>${label} : </strom> ${dato}`
+        document.body.appendChild(p);
+    }
+
+        pedirDato('nombre', 'Nombre')
+        pedirDato('apellido', 'Apellido')
+        pedirDato('edad', 'Edad')
+        pedirDato('web', 'Web')    
+        */
+
+        /* const sumar = (a, b) => {
+            const a1 = 1
+            let a2 = 2
+            var a3 = 3
+
+            return s = a + b
+        }
+            console.log(sumar(10, 20)) */ 
+        
+        /*const cambiarDato = (parametro) => {
+            parametro = 10
+        }
+        
+        const par = 1
+
+        cambiarDato(par)
+        console.log(par)*/
+
+     /*   const cambiarDato = (parametro) => {
+            const copiaObjeto = {...parametro }
+            copiaObjeto.nuevoPropiedad = 'nuevo valor'
+            copiaObjeto.obj.otraPropiedad = 'nuevo otro valor'
+
+            console.log('copia Objeto', copiaObjeto)
+        }
+
+        const obj = {
+            propiedad: 'valor',
+            obj:{
+                otraPropiedad:  'otro valor'
+            } 
+        }
+
+    
+        cambiarDato(obj)
+        console.log(obj) */
+    
+     //ejercicio de codigo mal desarroyado 
+
+   /* const apellido = prompt('Ingrese su apellido') 
+    const pApellido = document.createElement('p')
+    pApellido.innerHTML = `<em>Apellido: </em> ${apellido}`
+    document.body.appendChild(pApellido)
+
+    
+    const edad = prompt('Ingrese su edad') 
+    const pEdad = document.createElement('p')
+
+    if(edad <= 18){
+        pEdad.innerHTML = `<em>Apellido: </em> ${edad}`
+        document.body.appendChild(pEdad)
+    }else {
+        pEdad.innerHTML = `<em>Apellido: </em> ${edad}
+        <strom> Su Edad es grande</strom>`
+        document.body.appendChild(pEdad)
+    }
+
+
+    function pedirNombre () {
+        const nombre = prompt('Ingrese su nombre') 
+        const pNombre = document.createElement('p')
+        pNombre.innerHTML = `<em>Nombre: </em> ${nombre}`
+        document.body.appendChild(pNombre);
+    }*/
+
+
+    /*let varUno = 10
+    let varDos = 20
+    let varTres = varUno
+
+    console.log(varUno === varTres)
+
+    varTres = 20
+
+    console.log(varTres)
+    console.log(varUno) */
+
+    const arrayUno = [1,2,3]
+    const arrayDos = [1,2,3]
+    const arrayTres = arrayUno
+
+    console.log(arrayUno === arrayDos)
+    console.log(arrayTres === arrayUno)
+
+    arrayTres[0] = -1
+
+    console.log(arrayTres)
+    console.log(arrayUno)
+
+    arrayUno[1] = 100
+
+    console.log(arrayTres)
+    console.log(arrayUno)
+    
+    </script>
+</body>
+</html>

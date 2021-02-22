@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Filter</title>
+</head>
+<body>
+    
+
+    <script>
+        const numeros = [1, 2,3,4,5]
+
+       const resultado = numeros.filter(numero => numero % 2 !== 0) 
+          
+        console.log(resultado)
+
+        const personas = [
+            { nombre: 'Carlos',    edad: 20 },
+            { nombre: 'Carla',     edad: 25 },
+            { nombre: 'Francisco', edad: 15 },
+            { nombre: 'Estela',    edad: 17 },
+            { nombre: 'Juan',      edad: 40 },
+
+        ]
+
+        const mayores = personas.filter(p => p.edad < 18)
+
+        console.log(mayores)
+    </script>
+</body>
+</html>

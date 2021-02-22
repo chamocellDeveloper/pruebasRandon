@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Logicas</title>
+</head>
+<body>
+    
+<script>
+
+    /* 
+    AND 
+
+    X | AND | Y
+   -------------
+    T |  T  | T
+    T |  F  | F
+    T |  F  | T
+    T |  F  | F
+   */ 
+  console.log(true && true)
+  console.log(false && true)
+  console.log(true && false)
+  console.log(true && false)
+  
+  /* 
+    OR 
+
+    X | AND | Y
+   -------------
+    T |  T  | T
+    T |  T  | F
+    T |  T  | T
+    T |  F  | F
+   */ 
+
+   console.log(true || true)
+  console.log(false || true)
+  console.log(true || false)
+  console.log(true || false)
+
+
+ /* 
+    NOT 
+
+    X | NOT | Y
+   -------------
+    T |  F  
+    F |  T  
+  
+   */ 
+
+   console.log(!true)
+  console.log(!false)
+
+
+  //puedes Cambiar los operadores logicos && || !
+
+  /*const herramienta = prompt('Ingrese una herramienta')
+  const color = prompt('Ingrese un color ')
+
+  if(herramienta === 'martillo' || color === 'rojo') {
+      alert('Adivinamos la combinación')
+  }else{
+      alert('No adivinamos la combinacion')
+  }
+*/
+
+ //valor OR para inicialisar la variable
+ /*const saludar = (nombre) => {
+     const nombreMostrado = nombre || 'Aninimo'
+    alert('Bienvenido ' + nombreMostrado)
+ }
+
+ saludar()*/
+
+ /*const datos = {
+     producto: {
+         nombre: 'Este es el nombre del producto'
+     }
+ }
+  console.log(datos && datos.producto && datos.producto.nombre)
+*/
+
+
+const login = false
+
+if(!login){
+
+    alert('Ingrese por favor')
+}
+
+</script>
+</body>
+</html>

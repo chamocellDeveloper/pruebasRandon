@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array ForEach</title>
+</head>
+<body>
+  
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+    </ul>
+    
+    <script>
+        
+
+        const valores = [3,4,5,7,10,9,5]
+
+        /*for(let i = 0; i < valores.length; i++){
+            if(valores[i] % 2 !== 0){
+                continue
+            }
+            console.log('encontre un par: ',valores[i])
+        }*/
+
+        valores.forEach(valor => {
+            if(valor % 2 !== 0){
+                console.log(valor)
+            }
+        })
+        //const lis = document.querySelectorAll('li')
+
+        /*const lis = document.getElementsByTagName('li')
+
+        
+        [].forEach.call((lis,li) => {
+            console.log(li)
+        });*/
+
+        /*for(let i = 0; i < lis.length; i++){
+            console.log(lis[i])
+        }*/ 
+
+
+
+        /*lis.forEach( li => {
+            li.style.backgroundColor = 'yellow'
+        })*/
+
+        
+        /*const valores = [3,5,7,9]
+        
+        valores.forEach( (valor)=> {
+            console.log(valor)
+        })*/
+
+        /*valores.forEach( (valor,index,array)=> {
+            console.log('valores:', valor)
+            console.log('valores:', index)
+            console.log('valores:', array)
+        })*/
+        
+        /*for(let i = 0; i < valores.length; i++){
+            console.log(valores[i])
+        }*/
+    </script>
+</body>
+</html>

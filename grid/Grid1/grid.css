@@ -1,0 +1,63 @@
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 
+    [inicio] "header header header" 1fr
+    [contenido-statar] "izquierda contenido derecha1" 2fr
+    "izquierda contenido derecha2" 1fr
+    "izquierda footer footer" 1fr[fin]
+    /
+    [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+article {
+    grid-area: contenido;
+}
+
+aside:nth-of-type(2) {
+    grid-area: derecha1;
+}
+aside:last-of-type {
+    grid-area: derecha2;
+}
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px){
+    main {
+        grid-template:
+        [inicio] "header header header" 1fr
+        [contenido-statar] "contenido contenido contenido" 2fr
+        "izquierda izquierda izquierda" 1fr
+        "derecha1 derecha1 derecha2"1fr
+        "footer footer footer" 1fr[fin]
+        /
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+    ;
+    }
+}
+
+@media screen and (max-width:375px){
+    main {
+        grid-template:
+        [inicio] "header header header" 1fr
+        [contenido-statar] "contenido contenido contenido" 2fr
+        "izquierda izquierda izquierda" 1fr
+        "derecha1 derecha1 derecha1"1fr
+        "derecha2 derecha2 derecha2"1fr
+        "footer footer footer" 1fr[fin]
+        /
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+    ;
+    }
+}

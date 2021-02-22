@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de toFixed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3226d1ef96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <div class="card mt-5">
+                    <div id="message"></div>
+                    <form id="form">
+                        <div class="card-header">
+                            <h1 class="text-center" id="name" name="name" >camara de Fotografia </h1>
+                        </div>
+                        <div class="card-body">
+                            <img src="camara.jpeg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <h2>super camara actual por sollo:</h2>
+                            <i class="fab fa-btc"></i>
+                            <h3 id="price"  name="price"></h3>
+                            <button class="btn btn-primary" onclick="getdData(event)">Comprar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

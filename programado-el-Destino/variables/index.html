@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables var,let,const</title>
+</head>
+<body>
+
+    
+    <script>
+        /*Datos Primitivos*/
+
+      var edad;
+      console.log(edad)
+      edad = 20
+      console.log(edad)
+      var nombre = 'El chamo'
+      console.log(nombre)
+      var verdadero = true 
+      var falso = false 
+      console.log(verdadero)
+      console.log(falso)
+
+      var nulo = null
+      console.log(nulo)
+
+      console.log(typeof edad)
+      console.log(typeof nombre)
+      console.log(typeof verdadero)
+      console.log(typeof indefinido)
+      console.log(typeof nulo)
+
+      /*ECMAScript 2015 - ES6*/ 
+      
+      let precio = 12.5;
+      console.log(precio)
+
+      let PI = 3.14169;
+      console.log(PI)
+
+      var apellido
+      console.log(apellido)
+      apellido = 'tu apellido'
+
+      //console.log(direction) //Uncaught ReferenceError: can't access lexical declaration 'direction' before initialization
+      let direction = 'Calle 123'
+      
+      var numero = 2 
+      var numero = 4
+
+      console.log(numero)
+
+      let numeroImpar = 3 
+      //let numeroImpar = 5
+      console.log(numeroImpar) //ncaught SyntaxError: redeclaration of let numeroImparindex.html:55:10note: Previously declared at line 54, column 10
+      
+      var variableConVar = 10
+      let variableConLet = 20
+
+      console.log(window.variableConVar)
+      console.log(window.variableConLet)
+
+      const iva = 21
+      console.log(iva)  
+      //iva = 30        //Uncaught TypeError: invalid assignment to const 'iva'
+      console.log(iva)
+
+      const constante = 'valor' //Uncaught SyntaxError: missing = in const declaration
+
+      let nombreapellido
+      let $nombre
+      let nombre1
+      let nombre_apellido
+      //let 1nombre //Uncaught SyntaxError: identifier starts immediately after numeric literal
+
+      let nombreApellido
+
+</script>
+</body>
+</html>

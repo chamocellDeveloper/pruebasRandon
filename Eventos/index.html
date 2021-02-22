@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-color="red">Click 1</button>
+    <button data-color="green">Click 3</button>
+    <button data-color="blue">Click 3</button>
+    <button data-color="yellow">Click 4</button>
+    <button data-color="pink">Click 5</button>
+    <button >Click 6</button>
+    <button >Click 7</button>
+
+    <script>
+        const boton = document.querySelectorAll('button')
+
+
+        boton.forEach( (item) => {
+            console.log(item)
+
+            item.addEventListener('click', () => {
+            item.style.backgroundColor = 
+            item.dataset.color || 'purple';
+        }); 
+        });
+
+        /*console.log(boton)
+        boton[0].addEventListener('click', () => {
+            boton[0].style.backgroundColor="red";
+        });
+
+        console.log(boton)
+        boton[1].addEventListener('click', () => {
+            boton[1].style.backgroundColor="blue";
+        });
+
+        console.log(boton)
+        boton[2].addEventListener('click', () => {
+            boton[2].style.backgroundColor="green";
+        });*/
+
+
+    
+    </script>
+</body>
+</html>

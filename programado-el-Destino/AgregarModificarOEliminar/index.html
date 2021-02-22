@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar,Modificar o Eliminar elemento Array</title>
+</head>
+<body>
+    <script>
+        const personas = [
+            { nombre: 'A', apellido: '1'},
+            { nombre: 'B', apellido: '2'},
+            { nombre: 'C', apellido: '3'},
+            { nombre: 'D', apellido: '4'},
+            { nombre: 'E', apellido: '5'},
+        ]
+
+        /*console.log(personas)
+
+        personas.push({
+            nombre: 'F', apellido: '6'
+        })
+        console.log(personas)
+
+        const nuevoLengthPush = personas.push(
+            {nombre: 'G', apellido: '7'},
+            {nombre: 'H', apellido: '8'},
+        )
+        console.log(personas)
+        console.log(nuevoLengthPush)*/
+
+        /*console.log(personas)
+
+        personas.unshift({
+            nombre: 'F', apellido: '6'
+        })
+
+        console.log(personas)
+
+        const nuevoLengthUnshift = personas.unshift(
+            {nombre: 'G', apellido: '7'},
+            {nombre: 'H', apellido: '8'},
+        )
+        console.log(personas)
+        console.log(nuevoLengthUnshift) */
+
+        /*console.log(personas)
+
+        const eliminado = personas.pop()
+        console.log('eliminado: ', eliminado )
+        console.log(personas)*/
+
+        /*console.log(personas)
+        personas.shift()
+        console.log(personas)
+
+        const eliminado = personas.shift()
+        console.log('Eliminado: ', eliminado)
+        console.log(personas)*/
+        
+        /*console.log(personas)
+        const eliminados = personas.splice(2)
+        console.log('Eliminado: ',eliminados)
+        console.log(personas)*/
+
+        console.log(personas)
+        /*const eliminados = personas.splice(2, 2)
+        console.log('Eliminado: ',eliminados)
+        console.log(personas)*/
+
+        /*const eliminados = personas.splice(3, 1,
+        { nombre: 'Y', apellido: '10' } ,
+        { nombre: 'Z', apellido: '6' })
+        console.log('Eliminado: ',eliminados)
+        console.log(personas)*/
+
+        const eliminados = personas.splice(1, 0,
+        { nombre: 'Y', apellido: '10' } ,
+        { nombre: 'Z', apellido: '6' })
+        console.log('Eliminado: ',eliminados)
+        console.log(personas)
+
+
+
+
+    </script>
+</body>
+</html>

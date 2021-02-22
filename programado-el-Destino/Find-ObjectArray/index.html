@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Object en Array</title>
+</head>
+<body>
+ 
+    
+    <script>
+        const arrayNumerico = [1, 2, 3, 4, 5];
+        
+       /* const index = arrayNumerico.indexOf(10)
+        console.log(arrayNumerico)
+        console.log(index)
+        if(index === -1){
+            alert('No exciste el numero')
+        }*/
+
+        /*const este = arrayNumerico.includes(10)
+        console.log(este)*/
+
+        const arrayObjeto = [
+            {id: 1, precio: 1000, descripcion: 'uno'},
+            {id: 2, precio: 2000, descripcion: 'dos'},
+            {id: 3, precio: 3000, descripcion: 'tres'},
+        ]
+        //const index = arrayObjeto.indexOf(2)
+
+
+        const o = arrayObjeto.findIndex(elemento => {
+            return elemento.id === 3
+        }) 
+
+        if(o === undefined){
+          alert('Usuario encontraso')
+        }
+
+        console.log(o)
+
+
+        /*const o = arrayObjeto.find(elemento => {
+            return elemento.id === 12
+        }) 
+
+        if(o === undefined){
+          alert('Usuario encontraso')
+        }
+
+        console.log(o)*/
+       
+    </script>
+</body>
+</html>
