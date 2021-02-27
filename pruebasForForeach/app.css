@@ -177,6 +177,12 @@ contenido1:hover {
     transition: all 1s ease-in;
 }
 
+.reloj {
+    position: absolute;
+    display: flex;
+    margin-left: 45px;
+}
+
 contenido1 .caja1 {
     margin-left: 20px;
 }
