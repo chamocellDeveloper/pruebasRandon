@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 40px;
+    background: rgb(206, 205, 205);
+}
+
+.container {
+    margin-top: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    
+}
+
+.container:hover {
+background: rgb(4, 0, 255);
+color: #fff;
+box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.4);
+transition: all 1s ease-in;
+}
+
+.cont__group-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-venta{
+   display: inline-flexbox;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-venta:hover{
+    width: 100%;
+    height: 50vh;
+    background: rgb(4, 0, 255);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: all 1s ease-in;
+}
+
+.form-venta label {
+    display: block;
+    padding: 20px;
+    font-weight: 500;
+} 
+
+.form-venta input {
+    display: block;
+    margin-left: 20px;
+    
+}
+
+.veta__group-error {
+    display: none;
+    text-align: center;
+    color: rgb(255, 10, 10);
+    margin-top: 10px;
+    font-weight: 600;
+}
+.veta__group-error-active {
+    display: block;
+}
+
+
+.form-venta .buton_group-enviar{
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 150px;
+    margin: 40px 80px;
+    /*color: #fff;*/
+    font-size: 20px;
+    font-weight: 500px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0s ease-out;
+
+}
+
+.buton_group-enviar:active{
+    top: 3px;
+    box-shadow: 0px 2px 0px 0px #2e4476;
+}
+
+.buton_group-enviar,
+.buton_group-enviar span {
+    background: #3b5999;
+    border-left: 1px solid #2e4476;
+    box-shadow: 0px 2px 0px 0px #2e4476;
+}
+
+.buton_group-enviar span {
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    top: 0;
+    left: -61px;
+    line-height: 55px;
+    font-size: 25px;
+    display: block;
+    font-weight: normal;
+    border-radius: 5px 0 0 5px;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+    
+}
+
+contenido1:hover {
+    padding: 10px;
+    background: rgb(4, 0, 255);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: all 1s ease-in;
+}
+
+contenido1 .caja1 {
+    margin-left: 20px;
+}
+
+.group__contenido1-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.formulario__data ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+contenido2 {
+         
+}
+contenido3 {
+       
+}
+
+
+/*----------------- Contenido1 -------------*/
+
+

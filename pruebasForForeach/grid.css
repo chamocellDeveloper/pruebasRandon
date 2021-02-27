@@ -1,0 +1,36 @@
+main {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    [inicio] "header header header header" 1fr
+    [contenido-statar] "contenido contenido contenid contenid" 1fr
+    "contenido1 contenido1 contenido1 contenid1" 1fr
+    "contenido2 contenido2 contenido2 contenid2" 1fr
+    "contenido3 contenido3 contenido3 contenid3" 1fr [fin]
+    /
+    [inicio] 1fr [contenido-start] 1fr 1fr 1fr  [fin]
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: contenido;
+}
+
+@media screen and (max-width:768px){
+    main { 
+        grid-template: 
+    [inicio] "header header header header" 1fr
+    [contenido-statar] "contenido contenido" 1fr
+    "contenido1 contenido1 contenido1" 1fr
+    "contenido2 contenido2 contenido2 " 1fr
+    "contenido3 contenido3 contenido3 " 1fr [fin]
+    /
+    [inicio] 1fr [contenido-start] 1fr [fin]
+    ;
+    }
+}
